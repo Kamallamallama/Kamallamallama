@@ -1,13 +1,17 @@
 print "a = "
-A = gets.chomp.to_f
+  a = gets.chomp.to_f
 print "b = "
-B = gets.chomp.to_f
+  b = gets.chomp.to_f
 print "c = "
-C = gets.chomp.to_f
-D = B*B - 4*A*C
-if D < 0
-print "a quadratic equation has no root"
+  c = gets.chomp.to_f
+d = b*b - 4*a*c
+
+
+if d < 0
+  print "a quadratic equation has no root"
 else
-puts 'x1 = '+((-B-Math.sqrt(D))/2/A).to_s
-puts 'x2 = '+((-B+Math.sqrt(D))/2/A).to_s
+ x1 = ((-b-Math.sqrt(d))/2/a).to_s
+ x2 = ((-b+Math.sqrt(d))/2/a).to_s
+  print "x1 = #{x1} "
+  print "x2 = #{x2} "
 end
